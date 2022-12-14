@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        SeoBizz
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #eee;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #6384ff;
+        }
+
+        /* Fading animation */
+        .move {
+            animation-name: move;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes move {
+            to {
+                transform: translateX(20px);
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" id="navigation">
+        <div class="part1">
+            <h1>SEO</h1>
+            <img src="logo.png">
+        </div>
+        <div class="part2">
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#search">CASE STUDY</a></li>
+                <li><a href="#price">PRICING</a></li>
+                <li><a href="#team">OUR TEAM</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <button class="btn">Free Seo Analysis</button>
+        </div>
+    </nav>
+    <header class="header" id="about">
+        <div class="hero">
+            <h2>WE ARE </h2>
+            <h2 id="title">HAPPY TO SEE YOU</h2>
+        </div>
+        <div class="hero-img">
+            <img src="hero-img.png" alt="member team">
+        </div>
+    </header>
+    <div class="services" id="services">
+        <h2>Services We Provide</h2>
+        <div class="row">
+            <hr id="hr1">
+            <hr id="hr2">
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="service-icon-1.png" alt="icon">
+                <h4>Design</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Dignissimos, magnikls!!<br>
+                    dolor sit amet consectetur adipisicing.
+                </p>
+            </div>
+            <div class="card">
+                <img src="service-icon-2.png" alt="icon">
+                <h4>Development</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Dignissimos, magnikls!!<br>
+                    dolor sit amet consectetur adipisicing.
+                </p>
+            </div>
+            <div class="card">
+                <img src="service-icon-3.png" alt="icon">
+                <h4>Online Marketing</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Dignissimos, magnikls!!<br>
+                    dolor sit amet consectetur adipisicing.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="search" id="search">
+        <div class="search-hero">
+            <h2>How well do you Know Search <br>Engine Watch?</h2>
+            <div class="row2">
+                <hr id="hr1">
+                <hr id="hr2">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Facere architecto solu<br> Architecto corporis
+                quo temporibus! Facere architecto soluta accusantium <br> Saepe, quidem recusandae porro iste
+                repudiandae corporis quis animi officiis,<br> et, susci Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Asperiores,<br>Architecto corporis quo temporibus! Facere architecto soluta
+                accusantium <br>Architecto corporis quo temporibus! Facere archite accusantium porro iste k.<br>Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.Facere architecto solu<br>Architecto corporis quo
+                temporibus! Facere architecto soluta accusantium <br></p>
+            <button>load more</button>
+        </div>
+        <div class="search-img">
+            <img src="object1.png" alt="search">
+        </div>
+    </div>
+    <div class="studies">
+        <h2>SEO Case Studies</h2>
+        <div class="row">
+            <hr id="hr1">
+            <hr id="hr2">
+        </div>
+        <div class="container">
+            <div class="cards">
+                <div class="card">
+                    <img src="1.jpg" alt="icon">
+                    <div class="overlay">
+                        <div>
+                            <h5>
+                                <a href="#">Search Engine Optimize</a>
+                            </h5>
+                            <p>SEO, SMM</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="2.jpg" alt="icon">
+                    <div class="overlay">
+                        <div>
+                            <h5>
+                                <a href="#">Search Engine Optimize</a>
+                            </h5>
+                            <p>SEO, SMM</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="3.jpg" alt="icon">
+                    <div class="overlay">
+                        <div>
+                            <h5>
+                                <a href="#">Search Engine Optimize</a>
+                            </h5>
+                            <p>SEO, SMM</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="4.jpg" alt="icon">
+                    <div class="overlay">
+                        <div>
+                            <h5>
+                                <a href="#">Search Engine Optimize</a>
+                            </h5>
+                            <p>SEO, SMM</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="5.jpg" alt="icon">
+                    <div class="overlay">
+                        <div>
+                            <h5>
+                                <a href="#">Search Engine Optimize</a>
+                            </h5>
+                            <p>SEO, SMM</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="6.jpg" alt="icon">
+                    <div class="overlay">
+                        <div>
+                            <h5>
+                                <a href="#">Search Engine Optimize</a>
+                            </h5>
+                            <p>SEO, SMM</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pricing" id="price">
+        <h2>Pricing Plans</h2>
+        <div class="row">
+            <hr id="hr1">
+            <hr id="hr2">
+        </div>
+        <div class="container">
+            <div class="cards">
+                <div class="card card1">
+                    <div class="price-color card-color1">
+                        <h3>STANDARD</h3>
+                        <div class="sec1"></div>
+                        <div class="sec2"></div>
+                        <div class="sec3">
+                            <p class="price">$10.00</p>
+                            <span>/month</span>
+                        </div>
+                        <ul class="price-list list1">
+                            <li><i class="fa fa-check-circle-o"></i>50GB Disk Space</li>
+                            <li><i class="fa fa-check-circle-o"></i>50 Email Accounts</li>
+                            <li><i class="fa fa-check-circle-o"></i>50GB Monthly Bandwidth</li>
+                            <li><i class="fa fa-times" style="color: #707070;"></i></li>
+                            <li><i class="fa fa-times" style="color: #707070;"></i></li>
+
+                        </ul>
+                    </div>
+                    <button>SIGN UP</button>
+                </div>
+                <div class="card card2">
+                    <div class="price-color card-color2">
+                        <h3 class="titlle">BUSINESS</h3>
+                        <div class="sec1"></div>
+                        <div class="sec2"></div>
+                        <div class="sec3">
+                            <p class="price">$20.00</p>
+                            <span>/month</span>
+                        </div>
+                        <ul class="price-list list2">
+                            <li><i class="fa fa-check-circle-o" style="color: #17a2b8;"></i>60GB Disk Space</li>
+                            <li><i class="fa fa-check-circle-o" style="color: #17a2b8;"></i>60 Email Accounts</li>
+                            <li><i class="fa fa-check-circle-o" style="color: #17a2b8;"></i>60GB Monthly Bandwidth
+                            </li>
+                            <li><i class="fa fa-check-circle-o" style="color: #17a2b8;"></i>15 Subdomains</li>
+                            <li><i class="fa fa-times" style="color: #707070;"></i></li>
+
+                        </ul>
+
+                    </div>
+                    <button>SIGN UP</button>
+                </div>
+                <div class="card card3">
+                    <div class="price-color card-color3">
+                        <h3>GOLD</h3>
+                        <div class="sec1"></div>
+                        <div class="sec2"></div>
+                        <div class="sec3">
+                            <p class="price">$10.00</p>
+                            <span>/month</span>
+                        </div>
+                        <ul class="price-list">
+                            <li><i class="fa fa-check-circle-o" style="color: #28a745;"></i>60GB Disk Space</li>
+                            <li><i class="fa fa-check-circle-o" style="color: #28a745;"></i>60 Email Accounts</li>
+                            <li><i class="fa fa-check-circle-o" style="color: #28a745;"></i>60GB Monthly Bandwidth
+                            </li>
+                            <li><i class="fa fa-check-circle-o" style="color: #28a745;"></i>15 Subdomains</li>
+                            <li><i class="fa fa-check-circle-o" style="color: #28a745;"></i>Life time gurrenty</li>
+                        </ul>
+                    </div>
+                    <button>SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="team" id="team">
+        <h2>Teamwork Makes the Dream Word</h2>
+        <div class="row">
+            <hr id="hr1">
+            <hr id="hr2">
+        </div>
+        <div class="team-title">
+            <p>Ut blandit sem vitae ipsum vestibulum finibus. Pellentesque habitant morbi tristique senectus</p>
+        </div>
+        <div class="container">
+            <div class="cards">
+                <div class="card">
+                    <img src="team-member-1.jpg" alt="icon">
+                    <div class="team-member">
+                        <h5>
+                            <a href="#">Steve Johnson</a>
+                        </h5>
+                        <p>Chief Exicutive Officer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="team-member-2.jpg" alt="icon">
+                    <div class="team-member">
+                        <h5>
+                            <a href="#">Olivia Jackson</a>
+                        </h5>
+                        <p>Cheif Operating Officer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="team-member-3.jpg" alt="icon">
+                    <div class="team-member">
+                        <h5>
+                            <a href="#">Tamerlan Aziev</a>
+                        </h5>
+                        <p>Chief Technology Officer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="team-member-4.jpg" alt="icon">
+                    <div class="team-member">
+                        <h5>
+                            <a href="#">Silvia Perry</a>
+                        </h5>
+                        <p>Head of Marketing</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="team-member-5.jpg" alt="icon">
+                    <div class="team-member">
+                        <h5>
+                            <a href="#">John Kenny</a>
+                        </h5>
+                        <p>Senior Design Strategist</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="team-member-6.jpg" alt="icon">
+                    <div class="team-member">
+                        <h5>
+                            <a href="#">David Schwimmer</a>
+                        </h5>
+                        <p>Web Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="customer">
+        <div class="cards">
+            <img src="client-1.png" alt="client">
+            <img src="client-2.png" alt="client">
+            <img src="client-3.png" alt="client">
+            <img src="client-6.png" alt="client">
+            <img src="client-7.png" alt="client">
+        </div>
+    </div>
+    <div class="testimonial">
+        <h2>Testimonial</h2>
+        <div class="row">
+            <hr id="hr1">
+            <hr id="hr2">
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides  move">
+                <div class="numbertext">1 / 2</div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="section1 .card-color1">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <div class="section2 card-color1">
+                            <p>Lorem ipsum dolor sit <br>amet consectetur<br> adipisicing elit.<br> consectetur
+                                adipisicing elit</p>
+                        </div>
+                        <div class="bottom">
+                            <ul class="list">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="section3">
+                            <h3>WILLIAMSON</h3>
+                            <span>Web Developer</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="section1 card-color2">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <div class="section2 card-color2">
+                            <p>Lorem ipsum dolor sit <br>amet consectetur<br> adipisicing elit.<br> consectetur
+                                adipisicing elit</p>
+                        </div>
+                        <div class="bottom">
+                            <ul class="list">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="section3">
+                            <h3>KRISTINA</h3>
+                            <span>Web Designer</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="section1 card-color3">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <div class="section2 card-color3">
+                            <p>Lorem ipsum dolor sit <br>amet consectetur<br> adipisicing elit.<br> consectetur
+                                adipisicing elit</p>
+                        </div>
+                        <div class="bottom">
+                            <ul class="list">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="section3">
+                            <h3>KRISTINA</h3>
+                            <span>Web Designer</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="mySlides  move">
+                <div class="numbertext">2 / 2</div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="section1 .card-color1">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <div class="section2 card-color1">
+                            <p>Lorem ipsum dolor sit <br>amet consectetur<br> adipisicing elit.<br> consectetur
+                                adipisicing elit</p>
+                        </div>
+                        <div class="bottom">
+                            <ul class="list">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="section3">
+                            <h3>WILLIAMSON</h3>
+                            <span>Web Developer</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="section1 card-color2">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <div class="section2 card-color2">
+                            <p>Lorem ipsum dolor sit <br>amet consectetur<br> adipisicing elit.<br> consectetur
+                                adipisicing elit</p>
+                        </div>
+                        <div class="bottom">
+                            <ul class="list">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="section3">
+                            <h3>KRISTINA</h3>
+                            <span>Web Designer</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="section1 card-color3">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <div class="section2 card-color3">
+                            <p>Lorem ipsum dolor sit <br>amet consectetur<br> adipisicing elit.<br> consectetur
+                                adipisicing elit</p>
+                        </div>
+                        <div class="bottom">
+                            <ul class="list">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="section3">
+                            <h3>KRISTINA</h3>
+                            <span>Web Designer</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+
+    </div>
+    <div class="contact" id="contact">
+        <h2>Get a Free Quote</h2>
+        <div class="row">
+            <hr id="hr1">
+            <hr id="hr2">
+        </div>
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Phone">
+                <input type="text" placeholder="Website">
+                <textarea cols="30" rows="10">Message</textarea>
+                <input type="button" value="GET A QUOTE">
+            </form>
+        </div>
+        <div class="follow">
+            <p>Follow us: </p>
+            <ul>
+                <li><a href="#"> <i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"> <i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="call">
+        <div class="cards">
+            <div class="call1">
+                <h5>Address</h5>
+                <p>868 S. La Sierra Drive</p>
+            </div>
+            <div class="call1">
+                <h5>Email</h5>
+                <p>info@companyname.com</p>
+            </div>
+            <div class="call1">
+                <h5>Phone</h5>
+                <p>+1 (222) 400-5555</p>
+            </div>
+            <div class="call1">
+                <button>Contact Us</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="cards">
+            <div class="part">&copy;2018. All rights reserved</div>
+            <div class="part social">
+                <ul>
+                    <li> <a href="#"> <i class="fa fa-facebook"></i></a></li>
+                    <li> <a href="#"> <i class="fa fa-twitter"></i></a></li>
+                    <li> <a href=""><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="part">
+                <a href="#">Privacy Policy</a>
+                -
+                <a href="#">Terms&Conditions</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        // $(window).scroll(function(){
+        //     $('#navigation').css('color',"black").change('')
+        // })
+        var isScrolling, isNotScrolling;
+        window.addEventListener('scroll', function(event) {
+
+            // Clear our timeout throughout the scroll
+            window.clearTimeout(isScrolling);
+
+            // Set a timeout to run after scrolling ends
+            isScrolling = setTimeout(function() {
+
+                document.querySelector('#navigation').style.background = 'blue';
+
+            }, 20);
+
+
+        }, false);
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
